@@ -72,7 +72,7 @@ public class BasePage {
         takesScreenshot = (TakesScreenshot) theWebDriver;
         try {
             FileUtils.copyFile(takesScreenshot.getScreenshotAs(OutputType.FILE)
-                    ,new File("src/test/resources/features/screenshots/"+page+rnd.nextInt(UPPER_BOUND)+".png"));
+                    ,new File("src/test/resources/screenshots/"+page+rnd.nextInt(UPPER_BOUND)+".png"));
         } catch (IOException e) {
             e.printStackTrace();
         }
